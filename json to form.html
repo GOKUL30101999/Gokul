@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>FORM</title>
+    </head>
+    <body>
+        <form id="frm"></form>
+        <script>
+           var data ={
+               "Name": "Grootan",
+                "Age": 23,
+                "Country": ["India", "Australia", "Kenya"],
+                "DOB": "yyyy/mm/dd",
+                "Gender": "male/female",
+                "Languages Known": ["Java", "Ruby", "Python"],
+                "Favourite Color": "#000",
+                "Upload photograph": "file (only png)",
+                "Email": "foo@bob.in",
+                "Start Time": "10:30 AM",
+                "Website Address": "URL",
+                "Title": "Grootan Test",
+                "Sub Title": "Round 2",
+                "CGPA": "1-10"    
+            };
+            var title=document.createElement("H1");
+            title.setAttribute("id","maintitle");
+            title.setAttribute("style","font-family:Times New Roman");
+            document.getElementById("frm").appendChild(title);
+            document.getElementById("maintitle").innerHTML=data.Title;
+
+            var subtitle=document.createElement("H2");
+            subtitle.setAttribute("id","subtitle");
+            subtitle.setAttribute("style","font-family:Times New Roman");
+            document.getElementById("frm").appendChild(subtitle);
+            document.getElementById("subtitle").innerHTML=data.Sub_Title;
+
+           for(var i in data)
+            {
+                if(i.equals("Title") && i.equals("Sub Title"))
+                {
+                    continue;
+                }
+                else
+                {
+                    if(i.equals("Name"))
+                    {
+                        
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

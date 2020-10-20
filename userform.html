@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Form</title>
+    <script type="text/javascript">
+    function confSubmit(form) {
+    if (confirm("you want to submit this form?")) {
+    form.submit();
+    }
+    else {
+    alert("You decided to not submit the form!");
+    }
+    }
+    </script>
+</head>
+<body>
+    <h1>Grootan Test</h1>
+    <h3>Round 2</h3>
+    <form action="info.php" method="post">
+        <p>&ensp;Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;: <input type="text"></p>
+        <p>&ensp;Age &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <input type="number"></p>
+        <label for="cars">&ensp;Country&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:</label>
+        <select id="cars" name="cars">
+            <option value="select">Select</option>
+            <option value="in">India</option>
+            <option value="au">Australia</option>
+            <option value="Ke">Kenya</option>
+          </select>
+        <p>&ensp;DOB &ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <input type="date"> </p>
+        <label for="gen">Gender &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:<input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label></label>
+        <br><br>
+        <label for="lk">&ensp;Languages Known&emsp;&emsp;&emsp;&emsp;&emsp;: </label>
+        <select id="lk">
+             <option value="select">Select</option>
+             <option value="ja">Java</option>
+             <option value="R">Ruby</option>
+            <option value="py">Python</option>
+       </select>
+       <p>&ensp;Favourite color&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <input type="color"> </p>
+       <p>&ensp;Upload Photograph &ensp;&emsp;&emsp;&emsp;&emsp;: <input type="file" accept="image/x-png"> </p>
+       <p>&ensp;Email &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <input type="text"></p>
+       <p>&ensp;Start time &ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <input type="time"> </p>
+       <p>&ensp;Website Address&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <input type="text"> </p>
+        <p>&ensp;CGPA &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:<input type="range" min="0" max="10"> </p>
+        <br><p> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit" onClick="confSubmit(this.form);" value="Submit Form"></p>
+
+    </form>    
+</body>
+</html>
